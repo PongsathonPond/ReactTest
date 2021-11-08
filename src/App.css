@@ -1,0 +1,415 @@
+:root {
+
+
+  --sidebar-flex:1;
+  --condiv-flex: 6;
+  --fontsize-p: 1.2rem;
+  --fontsize-nav:1.6rem;
+  --typing-font:3rem;
+}
+
+
+*{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+
+
+
+.App {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+ 
+}
+
+nav{
+padding: 70px 0px 0px 10px;
+flex:var( --sidebar-flex);
+background: #333;
+
+}
+
+
+nav ul{
+
+font-size: var(--fontsize-nav);
+text-align: center;
+list-style: none;
+
+
+}
+
+nav ul li{
+
+
+  margin: 50px;
+}
+
+nav ul li a{
+
+color: #fff;
+text-decoration: none;
+}
+
+.condiv{
+
+  padding: 100px;
+  background-color: #f4f5f9 ;
+  flex: var(--condiv-flex);
+}
+
+.condiv1{
+
+
+  background-color: #f4f5f9 ;
+  flex: var(--condiv-flex);
+ 
+}
+
+.home{
+
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profilepic{
+
+
+  border-radius: 50%;
+  width: 350px;
+
+  margin:60px;
+}
+
+.social{
+
+position: absolute;
+margin-top: 20px;
+display: flex;
+bottom: 60px;
+
+}
+
+.social i{
+
+
+  padding-right: 30px;
+  font-size: 25px;
+  color: #949b9c;
+
+}
+
+.social i:hover{
+
+  color: #333;
+}
+
+.typingeffect{
+
+font-size: var(--typing-font);
+margin-bottom: 30px;
+font-family: Georgia;
+font-size: 60px;
+}
+
+
+.about{
+
+  text-align: center;
+}
+
+.subtopic{
+
+margin:20px 20px 70px 20px !important;
+
+}
+
+.subtopic1{
+
+  margin:20px 20px 20px 20px !important;
+  
+  }
+
+h1,h2,h3,h4{
+
+  margin: 10px;
+}
+p{
+
+  font-size:var(--fontsize-p) ;
+}
+
+.Widecard{
+
+  display: flex;
+  margin: 30px 0px 30px 0px;
+  transition: .3s;
+  border-radius:10px;
+  padding: .9rem;
+  color:rgb(255, 255, 255);
+  background-color: #333;
+}
+
+.Widecard:hover{
+color:#333;
+background: #fff;
+box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+
+
+}
+
+.skills ul{
+
+display: flex;
+background-color: #333;
+color: #fff;
+border-radius: 10px;
+
+}
+
+.skills ul li{
+
+
+  list-style: none;
+
+  margin: 30px;
+}
+
+.icon{
+
+  display: flex;
+  width: 20%;
+  margin-left: 5%;
+}
+
+.icon1{
+
+  display: flex;
+  width: 20%;
+  margin-left: 20%;
+
+}
+
+.wide-con1{
+
+margin-left: 100px;
+
+}
+
+.wide-con{
+
+  width: 100vh;
+}
+
+
+.container {
+  width: 100%;
+  margin-left: 3%;
+  
+}
+
+.container2 {
+  width: 100%;
+  margin-left: 3%;
+  
+}
+
+li {
+  position: relative;
+  list-style: none;
+  margin: 50px 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#li1:before {
+
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 40%;
+  height: 30px;
+  background-color: #d8d8d8;
+  border-radius: 1000px;
+}
+
+#li1:after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 0;
+  height: 30px;
+  background: linear-gradient(to left, #F2709C, #FF9472);
+  border-radius: 1000px;
+  animation-duration: .7s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+#li1.html:after {
+  animation-name: html;
+}
+
+@keyframes html {
+  to {
+      width: 30%;
+  }
+}
+
+
+
+
+#li1.css:after {
+  animation-name: css;
+}
+
+@keyframes css {
+  to {
+      width: 20%;
+  }
+}
+
+#li1.js:after {
+  animation-name: js;
+}
+
+@keyframes js {
+  to {
+      width: 13%;
+  }
+}
+
+#li1.react:after {
+  animation-name: react;
+}
+
+@keyframes react {
+  to {
+      width: 10%;
+  }
+}
+
+
+#li1.React:after {
+  animation-name: React;
+}
+
+@keyframes React {
+  to {
+      width: 15%;
+  }
+}
+
+#li1.Laravel:after {
+  animation-name: Laravel;
+}
+
+@keyframes Laravel {
+  to {
+      width: 5%;
+  }
+}
+
+
+#li1.bootstrap:after {
+  animation-name: bootstrap;
+}
+
+@keyframes bootstrap {
+  to {
+      width: 25%;
+  }
+}
+
+#li1.material:after {
+  animation-name: material;
+}
+
+@keyframes material {
+  to {
+      width: 10%;
+  }
+}
+
+
+
+
+
+.col1{
+
+  position:relative;
+  float:left;
+  width:49%;
+  
+}
+
+.col2{
+
+  position:relative;
+  float:left;
+  width:49%;
+  margin:0px 0.5%;
+  
+}
+
+.slider {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 1000px;
+  height: 600px;
+  border-radius: 10px;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+.Resume{
+
+  height: 80%;
+  margin: 0 auto;
+}
