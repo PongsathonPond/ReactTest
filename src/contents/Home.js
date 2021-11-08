@@ -12,7 +12,7 @@ render(){
 
         <img src={profilepic} alt="profile" className="profilepic"/>
         
-        <ReactTypingEffect  text ={['Hello Word !','Welcome To Portfolio ','By React Js']} speed={50} className="typingeffect" />
+        <ReactTypingEffect  text ={['เจี๊ยวเล็กเท่ามด','Welcome To Portfolio ','By React Js']} speed={50} className="typingeffect" />
 
 
 
